@@ -27,6 +27,8 @@ import { RestaurantsService} from './restaurants/restaurants.service';
 import { ShoppingCartService } from './restaurant-detail/restaurant-cart/restaurant-cart.service';
 import { RestaurantOrderComponent } from './restaurant-order/restaurant-order.component';
 import { OrderService } from './restaurant-order/restaurant-order.service';
+import { RestaurantDeliveryComponent } from './restaurant-order/restaurant-delivery/restaurant-delivery.component';
+import { RestaurantOrderSummaryComponent } from './restaurant-order-summary/restaurant-order-summary.component';
 
 
 
@@ -49,7 +51,9 @@ import { OrderService } from './restaurant-order/restaurant-order.service';
     RestaurantOrderComponent,
     InputComponent,
     RadioComponent,
-    RestaurantOrderItemsComponent
+    RestaurantOrderItemsComponent,
+    RestaurantDeliveryComponent,
+    RestaurantOrderSummaryComponent
     
   ],
   imports: [

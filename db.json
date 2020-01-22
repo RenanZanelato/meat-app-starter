@@ -370,5 +370,45 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "123322",
+      "number": "23",
+      "complement": "1",
+      "paymentOption": 1,
+      "orderItems": [
+        {
+          "quantity": 6,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": "12321",
+      "number": "1",
+      "complement": "1",
+      "paymentOption": 1,
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "capp"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "address": "12321",
+      "number": "21",
+      "complement": "11",
+      "paymentOption": 4,
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 3
+    }
+  ]
 }
