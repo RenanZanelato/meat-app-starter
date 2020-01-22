@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule,LOCALE_ID} from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-
+import {FormsModule} from '@angular/forms';
 import {ROUTES} from './app.routes';
 
 import { AppComponent } from './app.component';
@@ -18,9 +18,16 @@ import { RestaurantMenuComponent } from './restaurant-detail/restaurant-menu/res
 import { RestaurantCartComponent } from './restaurant-detail/restaurant-cart/restaurant-cart.component';
 import { RestaurantMenuItemComponent } from './restaurant-detail/restaurant-menu-item/restaurant-menu-item.component';
 import { RestaurantReviewsComponent } from './restaurant-detail/restaurant-reviews/restaurant-reviews.component';
+import { InputComponent } from './shared/input/input.component';
+import { RadioComponent } from './shared/radio/radio.component';
+import { RestaurantOrderItemsComponent } from './restaurant-order/restaurant-order-items/restaurant-order-items.component';
+
 
 import { RestaurantsService} from './restaurants/restaurants.service';
 import { ShoppingCartService } from './restaurant-detail/restaurant-cart/restaurant-cart.service';
+import { RestaurantOrderComponent } from './restaurant-order/restaurant-order.component';
+import { OrderService } from './restaurant-order/restaurant-order.service';
+
 
 
 
@@ -38,15 +45,20 @@ import { ShoppingCartService } from './restaurant-detail/restaurant-cart/restaur
     RestaurantMenuComponent,
     RestaurantCartComponent,
     RestaurantMenuItemComponent,
-    RestaurantReviewsComponent
+    RestaurantReviewsComponent,
+    RestaurantOrderComponent,
+    InputComponent,
+    RadioComponent,
+    RestaurantOrderItemsComponent
     
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [RestaurantsService,ShoppingCartService],
+  providers: [RestaurantsService,ShoppingCartService,OrderService,{provide: LOCALE_ID,useValue:'pt-Br'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

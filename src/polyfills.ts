@@ -19,4 +19,4 @@ import 'core-js/es7/reflect';
 import 'zone.js/dist/zone';
 
 import 'intl';
-import 'intl/locale-date/jsonp/pt-BR.js'
+import 'intl/locale-data/jsonp/pt-BR.js'
